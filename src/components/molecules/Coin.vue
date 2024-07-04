@@ -5,7 +5,7 @@ import Icon from '../atoms/Icon.vue';
 </script>
 
 <template>
-    <Icon name="coin"/>
+    <Icon name="pi pi-circle"/>
 </template>
 
 <style scoped>

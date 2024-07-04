@@ -1,8 +1,10 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import HeaderApp from '../molecules/HeaderApp.vue';
+</script>
 
 <template>
   <main>
-    <header></header>
+    <HeaderApp/>
   </main>
 </template>
 

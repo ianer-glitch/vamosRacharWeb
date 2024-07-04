@@ -3,16 +3,21 @@ import { ref } from 'vue';
 
 export interface IIcon{
   name : string,
+  isPrimeIcon:boolean,
 }
 
-const props = defineProps<IIcon>()
+const props = withDefaults(defineProps<IIcon>(),{
+ isPrimeIcon:true,
+})
 
-let src = ref('')
+let iconPath = ref(props.name)
 
 </script>
 
 <template>
-  <img src="src" />
+  <i :class="props.name" v-if="isPrimeIcon"></i>
+  <img :src="iconPath" v-else>
+  
 </template>
 
 <style scoped></style>
